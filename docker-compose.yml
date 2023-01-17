@@ -39,7 +39,7 @@ services:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
     depends_on:
-      - postgres-server
+      # - postgres-server
     networks:
       zbx_net_backend:
         aliases:
@@ -89,7 +89,7 @@ services:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
     depends_on:
-      - postgres-server
+      # - postgres-server
       - zabbix-server
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/ping"]
