@@ -38,8 +38,8 @@ services:
     secrets:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
-    depends_on:
-      # - postgres-server
+    # depends_on:
+    # - postgres-server
     networks:
       zbx_net_backend:
         aliases:
