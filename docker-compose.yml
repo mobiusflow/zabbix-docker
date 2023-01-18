@@ -124,6 +124,9 @@ networks:
       config:
         - subnet: 172.16.239.0/24
 
+volumes:
+  snmptraps:
+
 secrets:
   POSTGRES_USER:
     file: ./env_vars/.POSTGRES_USER
